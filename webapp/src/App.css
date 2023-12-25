@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=Inter:wght@300;400&display=swap");
+
+body {
+  -webkit-app-region: drag;
+}
+
+#root {
+  background-color: rgb(47, 47, 47);
+}
+
+#myscreen {
+  visibility: hidden;
+}
+
+body {
+  background-color: rgb(47, 47, 47);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#id {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.controlpin {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANAAAAA0CAYAAAD7cbbgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARMSURBVHgB7dw9SFtRGAbgL20o/iGiKA4FRZy0QxFFkIJ2KuhsVnXVXUdNncRdhy6KW7CjSgYxQlzSxUKUgoqxSP1bpMSgUmPve825nPyI1EtzD+Z94Oi9x6vby3fOd64RIaJn82W+9wkR/avIKyGiZ2OAiFzw506EQqENIaKCAoHAR/2eFYjIBQaIyAUGiMgFBojIBQaIyAUGiMgFBojIBQaIyAUGiMgFBojIBQbIYIeHhzI1NSWpVErITAyQoRCeYDAou7u7DJHBGCADqfAgNBUVFZJIJBgiQzFAhtHDMzg4KLOzs1JfX88QGYoBMkwkEnHCg4HwIDgqRDs7O0Lm8AsZZWRkRLq7u6Wtrc2ZUyG6uLjImifvMUAGKhQShAiDzMIAeWxjY0OOjo5keHg4ax5LNSznUHWam5ulv79fGhoanJ+fn5/L3NycjI6OZs1TcTFAHkJ45ufn7ev29nbp6uqyr0OhkCwvLzvPoZW9ubkpk5OTdpgA4cE8Gg6YZ4i8wSaCR/TwoFmgwhOLxezwoH2Neex9+vr65Orqyu7IKWNjY/aSDhUKIUJFouJjgDyQGx4MBVUFAoGAPY/9EJZpTU1Ndliw3AO9O8cQeYcB8oAKSWVlpfT29mb9TJ3zoALp8CygEikIT2dnp32th4uKhwHyAJZfCA7CgMqB8x1FddpWV1edioKGggqd3onDXmltbc2+RpVSy0AqHjYRPIIQAZoDqhGgum3oviFU4+PjdnNABWxgYMAJkN5oQHiwT6LiYwXykKpE9/f3zhyWatjboCuH5RzCoxoKQ0NDznM+38PHmjM83sr7cHl+MmnxYf9S6JAUAcIyD6HK3RMBwqXa2lQcOZ9MGuESzgCPvWGA0BQKjsLweI9LOMPgbWws7fTGAmDPgz0R38Y2CwNkGPX6jt6dUw0Dvo1tHi7hDIO3sVFlVHcO5zy4BraqzcMAGUhvcevhYbfNPAyQoRAinAGtrKzYex/+H5CZGCCD4ewHVYf/B2QuNhEMx/CYTQXoWk3c3t6eChHlsQ6197XbP/iSF6Cch4go4+bmRi8uSXxRAbpUs2dnZ9tCRHmsQ+6odls4QEtLS+F0Op0UInKg+szMzIS1Kbsa6QGyQ7S3t5fc2tqaESJyxOPxBe0WWbGLzGttEvugRlzEYrGfPT09VdXV1Tx8oJJ3cHCwEAwGv2pTPyTTN8gNEM6FqnETDoe/dXR0SG1t7XshKlHHx8fL1kH2F33KGr/Uzeuc539bo9Yab3Czvr7+vaWl5bSurq7V7/dXCVGJuLu7S0aj0c/T09N65cGyDdUnrSZ8BX63zBrvrJEVmImJiU9WmD6UlZU1lpeXtwrRC4NGQSqV2j85OdleXFwMW103vZmG67hoRz7ge+RvYSnXbI23QkRYtiUkc3iq8z3xizXyEKQaISo96LYlRDvmyfVUgBQs5xoz3zH4Eiq9RNeZcakNIvpf/gIzi9Fbf/cmpAAAAABJRU5ErkJggg==");
+  width: 330px;
+  height: 45px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+  top: -4px;
+  opacity: 0.9;
+  border-radius: 0px 0px 10px 10px;
+  border: 0px solid #000;
+  background: #161616;
+  box-shadow: 0px 0px 0.2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.controlpin:hover {
+  opacity: 1;
+}
+
+.controller {
+  width: 335px;
+  height: 175px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 10px 10px;
+  border: 0px solid #000;
+  background: #fff;
+  box-shadow: 0px 0px 0.2px 3px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  visibility: hidden;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 8;
+  padding: 10px;
+}
+
+#remscreen {
+  background-color: rgb(0, 0, 0);
+
+  top: 0px;
+  /* bottom: 0px; */
+  left: 0px;
+  /* right: 0px; */
+  width: 100%;
+  height: auto;
+  /* cursor: url("./cursor.png") 24 24, auto; */
+}
+
+.remscreendiv {
+  display: block;
+  margin: 0;
+  background-color: rgb(0, 0, 0) (255, 0, 4);
+}
+
+#root {
+  background-color: rgb(0, 0, 0);
+}
+
+#roomInput {
+  width: 169px;
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid #ababab;
+  background: #d8d8d8;
+  margin-right: 10px;
+}
+
+#connect_user {
+  width: 113px;
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid #2840bc;
+  background: #6f63ff;
+  color: #fff;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#samplethres {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  bottom: 0;
+}
+
+.samplethressdiv {
+  margin-bottom: 20px;
+}
+
+.disablemousecdiv {
+  display: flex;
+  gap: 40px;
+}
+
+.closepenlbtn {
+}
+
+#canvas {
+  overflow: auto;
+}
+
+.toggerdiv_button {
+  width: 113px;
+  height: 24px;
+}
+
+/* idpickerpin */
+.pin_iselector {
+  float: right;
+  width: 7px;
+  height: 60px;
+  margin-top: 25%;
+  background-color: red;
+  position: absolute;
+  z-index: 100;
+}
+
+.box_idselector {
+  width: 300px;
+  height: 402px;
+  border-radius: 9px;
+  background: #fff;
+  position: absolute;
+  top: -150px;
+  left: 10px;
+  visibility: hidden;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.userbox {
+  width: auto;
+  height: 44px;
+  background: #00cf6c;
+  box-shadow: 0px 1px 1.5px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#connectbtn {
+  width: 150px;
+  height: 40px;
+  padding: 1px;
+  border-radius: 3px;
+  color: #212121;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.userbox_child1 {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
